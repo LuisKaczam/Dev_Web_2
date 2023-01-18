@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+*{
+    margin: 0;
+}
+
+
+.cadastro{
+    background: linear-gradient(-45deg, #121212, #39484a, #254553, #3f4361);
+    background-size: 400% 400%;
+    animation: backgroundTransition 8s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.btnEntrar{
+        border: 1px solid white;
+        opacity: 1;
+        width: 15%;
+        padding: 15px 20px;
+        margin-left: 38rem;
+        margin-top: 2rem;
+        color: white;
+        border-radius: 0.5rem;
+        background-color: transparent;
+        font-size: 14px;
+}
+#aviso{
+    color: red;
+}
+
+.certo{
+    color: green;
+}
+
+.linkpag{
+    color: #000000;
+    border: 2px solid black;
+}
+
+
+.imgLogo{
+    font-size: 48px;
+    font-family: 'Nerko One', cursive;
+}
+
+.imgLogo2{
+    font-size: 32px;
+    font-family: 'Nerko One', cursive;
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-position: 0% 80%;
+    }
+
+    50% {
+        background-position: 80% 100%;
+    }
+
+    100% {
+        background-position: 0% 90%;
+    }
+}
+
+.navbar {
+    background: #000000
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: rgb(0, 217, 255);
+    transition: 0.4s
+}
+
+.nav-item:hover::after {
+    width: 100%
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(0, 217, 255);
+}
+
+.nav-link {
+    padding: 25px 5px;
+    transition: 0.2s
+}
+
+.modalWindowEvento{
+    width: 100vw;
+    height: 100vh;
+    background-size: 400% 400%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.475);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modalEvento{
+    width: 60%;
+    min-width: 240px;
+    min-height: 200px;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+
+}
+
+.closeModal{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 20px;
+}
+
+.modalWindowEvento.open{
+    display: flex;
+}
+
+@keyframes openModal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, 5px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.open .modalEvento{
+    animation: openModal 0.5s;
+}
+
+.btnSair{
+    border: 2px solid white;
+    color: white;
+}
+
+.btnSair:hover{
+    color: black;
+    background-color: white;
+}
+
+.btnAdiciona{
+    background-color: rgb(93, 148, 225);
+    color: white;
+    float: inline-end;
+    border-radius: 100%;
+}
+.btnAdiciona:hover{
+    background-color: rgb(64, 104, 159);
+}
+
+#avatar{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.modalWindowEventoEditar{
+    width: 100vw;
+    height: 100vh;
+    background-size: 400% 400%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.475);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modalEventoEditar{
+    width: 60%;
+    min-width: 240px;
+    min-height: 200px;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+
+}
+
+.closeModal{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 20px;
+}
+
+.modalWindowEventoEditar.open{
+    display: flex;
+}
+
+
+
+footer{
+    background-color: #212529;
+    
+}
+
+
